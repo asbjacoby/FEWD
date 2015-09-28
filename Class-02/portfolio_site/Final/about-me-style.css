@@ -1,0 +1,39 @@
+header {
+	padding-top: 40px;
+	font-weight: bold;
+	font-family: helvetica;
+	text-align: center;
+}
+body {
+	background-color: #f6f6f6;
+	border-top: solid 3px black;
+	border-bottom: solid 3px black;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin: 15px;
+	text-align: left;
+}
+h2 {
+	font-family: helvetica;
+	font-size: 18px
+}
+img {
+	border: solid 1px black;
+	padding: 5px;
+	float: right;
+	margin: 100px;
+	position: absolute;
+}
+footer {
+	padding-bottom: 40px;
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+}
+p {
+	text-align: left;
+}
+
+a {
+	color: #000000;
+}
