@@ -16,22 +16,26 @@ body {
 h2 {
 	font-family: helvetica;
 	font-size: 18px
+	margin-top: 20px;
 }
 img {
 	border: solid 1px black;
 	padding: 5px;
 	float: right;
-	margin: 100px;
-	position: absolute;
+	margin: 0 100px 50px 75px;
+    margin-top: 10px;
+	
 }
 footer {
 	padding-bottom: 40px;
 	font-weight: bold;
 	font-family: arial;
 	text-align: center;
+	margin: 25px;
 }
 p {
 	text-align: left;
+	margin-bottom: 75px;
 }
 
 a {
