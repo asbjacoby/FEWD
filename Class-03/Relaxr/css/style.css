@@ -49,11 +49,10 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family:'Open Sans', sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     background-size: cover;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -72,13 +71,94 @@ header {
 }
 
 footer {
-
+  text-align: center;
+  font-weight: 600
+  font-size: 9px;
+  color: white;
+  background: black;
+  padding: 30px 30px 30px 30px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+  margin: 40px;
+}
 
+h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
 
+h3{
+  font-size: 20px;
+  font-weight: 600;
+}
 
+img{
+  padding-right: 15px;
+  padding-left: 15px;
 
+}
+/*************
+CLASS STYLES
+*************/
+
+#bluebutton{
+  font-weight: 800;
+  font-size: 12px;
+  background: #033048;
+
+}
+
+.button{
+  background-color: yellow;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 40px 600px 100px 600px;
+  padding: 10px;
+  width: 130px;
+}
+
+.logo{
+   font-weight: 800;
+   font-size: 24px;
+
+}
+
+.benefits{
+  font-weight: 300;
+  font-size: 13px;
+  color: #033048;
+  text-align: left;
+  padding: 10px 20px 20px 200px;
+  background-color: #f2f6f5;
+}
+
+.quote{
+  font-weight: 300italic;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 450px 30px 450px;
+  color: white;
+}
+
+#bluebutton{
+  font-weight: 800;
+  font-size: 12px;
+  background-color: #01214c;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin: 40px 600px 100px 600px;
+  padding: 10px;
+  width: 130px;
+}
