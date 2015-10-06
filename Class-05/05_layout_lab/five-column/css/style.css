@@ -1,0 +1,64 @@
+/*Box Sizing*/
+* {
+	-moz-boz-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clear {
+	overflow: auto;
+}
+
+body{
+	color: #333;
+	font-family: helvetica, arial, sans serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header{
+	background-color: red;
+	padding: 10px;
+}
+
+article{
+	background-color: yellow;
+	padding: 10px;
+	width: 50%;
+}
+
+.article1{
+	float:left;
+}
+
+.article2{
+	float: right;
+
+}
+
+section{
+	background-color: green;
+	padding: 10px;
+	width: 33%;
+	float:left;
+	
+}
+
+.section1{
+	margin-right: 5%;
+}
+
+.section2{
+
+}
+
+.section3{
+	float:right;
+	margin: ;
+}
+
+footer{
+	background-color: blue;
+	padding: 10px;
+	clear: both;
+}
