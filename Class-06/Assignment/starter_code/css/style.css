@@ -11,10 +11,11 @@ Developer @GA in NYC
 /*******************************************/
 
 /* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
@@ -48,32 +49,42 @@ Developer @GA in NYC
 
 body {
      color: #000;
-     font-size: 24px;
+     font-size: 14px;
      font-weight: 300;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', sans-serif;
      background-color: #f0efef
 }
 
-li {
-  color:#f9e42e;
-}
-
-ul {
-  margin: 0;
-  padding: 5px 5px 5px 30px;  
-}
-
 li{
-  width: 10%;
   list-style: none;
-  padding: 5px 10px 5px 10px;
+  padding: 0px 20px 5px 20px;
   float: left;
   margin-right: 5px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav{
   font-weight: 600;
+  width: 84%;
+  float:right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+a{
+  color: inherit;
+}
+a:hover{
+  color:#f9e42e;
+  background-color: red;
+  text-decoration: none; 
+}
+
+img{
+  display: inline-block;
 }
 /******************************************
 /* LAYOUT
@@ -86,44 +97,163 @@ nav{
 }
 
 header {
-  background: #121212;
+  background: #033048;
+  padding-bottom: 40px;
 }
 
 footer {
   text-align: center;
   font-weight: 600
-  font-size: 9px;
   color: white;
   background: #121212;
   padding: 30px 30px 30px 30px;
-
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
 h1{
-  font-size: 24px;
+  font-size: 40px;
   color: white;
   font-weight: 800;
-  margin: 40px;
+  margin: 0px 0px 0px 40px;
+  padding-top: 40px;
+  padding-left: 30px;
+  width: 15%;
+  float: left;
+  display: inline-block;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 600;
+  color:#033048;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 800;
+  color:#033048;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+
+ul{
+  font-size: 24px;
+  font-weight: 600;
+  width:84%;
+  margin: 0px auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+section{
+  width: 700px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  margin-right: 20px;
+}
+
+article{
+  padding: 5px 10px 10px 10px;
+}
+
+aside{
+  width:240px;
+  float:left;
+  text-align: left;
+  padding-left: 5px;
+}
+
+span{
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0px auto;
+}
+
+p{
+  font-size: 24px;
+  font-weight: 300;
+  color:#606161;
+}
+
+p:first-letter{
+  font-size: 40px;
+  font-weight: 600;
+  float:left;
+  padding: 0px 10px 2px 0px;
+}
+
+.article1{
+  margin-top: 1px;
+}
+
+.sideli{
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  margin: 1px 20px 1px 2px;
+}
+
+.sidebar{
+  font-size: 24px;
+  font-weight: 300;
+  color: #033048;
+  display: inline;
+  list-style: none;
+  text-align: left;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.sidebarP{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+hr{
+  color: #033048;
 }
 
 #bluebutton{
   font-weight: 800;
-  font-size: 12px;
+  font-size: 16px;
   background: #033048;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 10px 20px 20px;
+  border-radius: 5px;
+  width: 30%;
+}
 
+.hr{
+  background-color:#033048;
+  padding:.5px; 
+  margin-top: 45px;
 }
 
 .calltoaction {
     background-color: yellow;
-    padding: 5px;
+    padding: 30px;
 }
 
 .logo{
    font-weight: 800;
-   font-size: 24px;
+   font-size: 30px;
+   line-height: 1.5;
 
+}
+
+#copyright{
+  font-size: 9px;
+  color:white;
+}
+
+.readmore{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  color: #033048;
 }
