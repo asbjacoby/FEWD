@@ -386,6 +386,24 @@ footer p {
     width: 730px;
   }
 
+  .sidebar h3{
+    font-size: 1.7em;
+  }
+
+  .sidebar ul li a {
+    font-size: 1.2em
+  }
+
+  .sidebar ul{
+    margin-bottom: 20px;
+  }
+
+  .sidebar p{
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+
   .bottom-cta {
     padding: 25px 0px 25px 12px;
   }
