@@ -273,6 +273,7 @@ footer p {
   font-weight: 600;
 }
 
+/******RESPONSIVE 768px*******/
 @media screen and (max-width:768px){
 
   body{
