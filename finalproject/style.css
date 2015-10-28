@@ -41,6 +41,12 @@ Developer @GA in NYC
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+/******link color override*****/
+a:visited { text-decoration: none; color:#BDC6CA; }
+a:hover { text-decoration: none; color:#BDC6CA; }
+a:focus { text-decoration: none; color:#BDC6CA; }
+a:hover, a:active { text-decoration: none; color:#BDC6CA }
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -78,13 +84,30 @@ h1 a:link{
 
 }
 
+h2{
+  font-family: Century gothic, serif;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid #bdc6ca;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+h3{
+  font-family: Century gothic, serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 header{
   width: 100%
 }
 
 header nav {
   text-align: center;
-  margin-top: 70px;
+  margin: 85px 0px auto;
   display: inline-block;
   width: 100%;
 }
@@ -92,12 +115,22 @@ header nav {
 header nav ul li {
   display: inline-block;
   margin: 0px auto;
+  margin-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Century gothic, serif;
   text-align: center;
 }
+
+li:hover{
+  text-decoration: underline;
+}
+
+li:first-of-type{
+  padding-left: 0px;
+}
+
 header nav ul li a {
   color: #bdc6ca;
   text-decoration: none;
@@ -109,20 +142,150 @@ img{
   display: inline-block;
   }
 ****/
+
+/*****HOME PAGE*****/
+
 .main{
     width: 950px;
-    margin: 10px 221px auto;
+    height: 1060px;
+    margin: 0px auto;
     padding: 0px;
     border: 10px solid #bdc6ca;
     background: #fff;
 }
 
-footer p{
+.slide{
+}
+
+hr{
+  width: 95%;
+  background-color: #bdc6ca;
+  height: 2px;
+  border: none;
+
+}
+
+.exhibits{
+  width: 47%;
+  height: 220px;
+  float: left;
+  border: 8px solid #bdc6ca;
+  margin: 10px 0px 10px 15px;
+  padding: 0px 25px;
+}
+
+.connect{
+  width: 47%;
+  height: 220px;
+  float: right;
+  border: 8px solid #bdc6ca;
+  margin: 10px 15px 10px 0px;
+  padding: 0px 25px;
+}
+
+.connect img{
+  float: left;
+}
+
+.connect ul li{
+  float: left;
+  list-style: none;
+  margin: 0px auto;
+  padding-left: 60px;
+  display: inline-block;
+}
+
+article p{
   font-size: 14px;
   color: #bdc6ca;
+  text-align: center;
 }
-/******link color override*****/
-a:visited { text-decoration: none; color:#BDC6CA; }
-a:hover { text-decoration: none; color:#BDC6CA; }
-a:focus { text-decoration: none; color:#BDC6CA; }
-a:hover, a:active { text-decoration: none; color:#BDC6CA }
+
+/*******ARTIST HOME PAGE*******/
+
+.artists ul{
+  list-style: none;
+}
+
+.artists ul li{
+  display: inline-block;
+  height: 160px;
+  width: 200px;
+  text-transform: uppercase;
+  margin: 2px 6px auto;
+  text-align: center;
+}
+
+.artists h2{
+  margin: 20px 40px 5px;
+}
+
+.artists h3{
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/******INDIVIDUAL ARTIST PAGES******/
+
+/******EXHIBITIONS PAGE******/
+
+/******PUBLICATIONS PAGE******/
+
+/******BLOG******/
+
+#bloglogo{
+  margin: 18px 165px auto;
+}
+
+.blogpost{
+  margin: 30px 0 30px 30px;
+  width: 700px;
+}
+
+.blogpost h2{
+  text-align: left;
+  border: none;
+  font-size: 1.8em;
+}
+
+.blogpost p{
+  text-align: left;
+  color: #161616;
+  font-size: 15px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+/******CONTACT******/
+
+.about{
+  margin: 20px 40px 5px;
+}
+
+.abouttext{
+  margin: 30px 75px;
+  color: #161616;
+  font-size: 15px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+.caption{
+  font-size: 10px;
+  margin: 0px auto;
+}
+
+/******RESPONSIVE 650px******/
+@media screen and (max-width:650px){
+
+ .hamburger-icon:before { 
+    content:'\2630';
+    color: #bdc6ca; 
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+}
