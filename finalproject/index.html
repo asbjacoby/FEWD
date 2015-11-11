@@ -19,26 +19,43 @@
 					<ul class="desktop-only">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="artists-page.html" alt="artists">Artists</a></li>
-						<li><a href="#">Exhibitions</a></li>
+						<li><a href="exhibitions.html" alt="exhibitions">Exhibitions</a></li>
 						<li><a href="#">Publications</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="has-children"><a href="contact.html">About</a>
+							<ul class="dropdown">
+								<li id="contact"><a href="#">Contact</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</div>
 	</header>
 	<div class="main clear">
 		<section class="slide">
-		slides and images hhhhhhhheeeeeerrrrrrrrrrrrreeeeeeee
+			<div id="slideshow">
+	    		<div>
+	     			<img src="images/Artist-images/slide-al.jpg">
+	    		</div>
+	    		<div>
+	    			<img src="images/Artist-images/slide-scott-smith.jpg">
+	    		</div>
+	    		<div>
+	    			<img src="images/Artist-images/slide-ted.jpg">
+	    		</div>
+	    		<div>
+	     			<img src="images/Artist-images/slide-burnett.jpg">
+	    		</div>
+			</div>
 		</section>
-		<hr>
+
 		<section class="exhibits">
 			<h2>Current Exhibitions</h2>
 		</section>
 		<section class="connect">
 			<h2>Connect with Us</h2>
 			<ul>
-				<li><h3>Like us</h3><a class ="socialmedia" href="https://www.facebook.com/Govinda-Gallery-48180005165/"><img src="images/icons & logos/facebook-4096-black.png" alt="facebook icon" target="_blank"></a></li>
+				<li><h3>Like us</h3><a class ="socialmedia" href="https://www.facebook.com/Govinda-Gallery-48180005165/" target="_blank"><img src="images/icons & logos/facebook-4096-black.png" alt="facebook icon"></a></li>
 				<li><h3>Write us</h3><a class="mailicon" href="#"><img src="images/icons & logos/envelope_closed_bw_143963.jpg"></a></li>
 			</ul>
 		</section>
@@ -47,9 +64,9 @@
 	</div>
 
 	<article class="clear">
-		<img src="images/icons & logos/facebook.png">
 		<p>Copyright &copy; Govinda Gallery 2015.  Web design by <a href="https://www.linkedin.com/in/annasbjacoby" alt= "annas linkedin"target="_blank">Anna Jacoby.</a></p>
 	</article>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src= "js/index.js"></script>
 </body>
 </html>
