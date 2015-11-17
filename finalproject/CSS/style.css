@@ -243,13 +243,14 @@ article p{
 /*******ARTIST HOME PAGE*******/
 
 .artists{
-  height: 1885px;
+  height: 2050px;
   width: 970px;
 }
 
 .artists ul{
   list-style: none;
   margin-top: 2px;
+  padding-left: 30px;
 }
 
 .artists ul li{
@@ -305,6 +306,85 @@ hr{
 
 /******PUBLICATIONS PAGE******/
 
+.books{
+  height: 1100px;
+  width: 970px;
+}
+
+.books h2{
+  margin: 20px 40px 5px;
+}
+
+.books ul{
+  list-style: none;
+  margin-top: 2px;
+  padding-left: 30px;
+}
+
+.books ul li{
+  display: inline-block;
+  height: 220px;
+  width: 180px;
+  padding: 6px;
+  text-transform: uppercase;
+  margin: 20px 10px auto;
+  text-align: center;
+}
+
+.books ul li:first-of-type{
+  margin: 20px 5px auto;
+}
+
+.button{
+  background: #bdc6ca;
+  border-radius: 1px;
+  padding: 12px;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin: 30px 290px;
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
+}
+
+.button a:hover{
+  font-weight: 600;
+}
+/***BOOK SLIDE STYLE***/
+#bookslideshow { 
+    margin: 20px 40px 5px; 
+    position: relative; 
+    width: 92.2%; 
+    height: 280px; 
+    border-bottom: 2px solid; 
+}
+
+#bookslideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/******GG BOOKS******/
+.bookthumb{
+  width: 20%;
+  border-right: 2px solid #bdc6ca;
+  margin: 40px 20px 40px 50px;
+  float: left;
+}
+
+.book-info{
+  width: 65%;
+  float: right;
+  margin: 30px 50px 50px 20px;
+  text-align: justify;
+}
+
 /******BLOG******/
 
 #bloglogo{
@@ -342,6 +422,7 @@ hr{
 .abouttext{
   margin: 30px 75px 0px;
   color: #161616;
+  text-align: justify;
   font-size: 15px;
   font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
 }
