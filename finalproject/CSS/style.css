@@ -371,15 +371,24 @@ hr{
 }
 
 /******GG BOOKS******/
+
+.ggbooks{
+  height: 4450px;
+}
+
+.ggbooks h2{
+  margin: 20px 40px 23px;
+}
+
 .bookthumb{
-  width: 20%;
+  width: 23.4%;
   border-right: 2px solid #bdc6ca;
   margin: 40px 20px 40px 50px;
   float: left;
 }
 
 .book-info{
-  width: 65%;
+  width: 61%;
   float: right;
   margin: 30px 50px 50px 20px;
   text-align: justify;
