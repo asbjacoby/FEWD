@@ -22,16 +22,14 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3000);
 
-$("#bookslideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#bookslideshow > div:first')
-    .fadeOut(3000)
-    .next()
-    .fadeIn(3000)
-    .end()
-    .appendTo('#bookslideshow');
-},  3000);
+$('.bookslideshow').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  variableWidth: true,
+  });
 
 });
 

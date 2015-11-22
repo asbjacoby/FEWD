@@ -213,6 +213,20 @@ img{
   padding: 0px 25px;
 }
 
+.exhibits h3{
+  text-align: justify;
+  padding: 15px 40px 0px 40px;
+}
+
+.exhibits a{
+  text-decoration: none;
+  color: #444;
+}
+
+.exhibits a:hover{
+  text-decoration: underline;
+}
+
 .connect{
   width: 47%;
   height: 250px;
@@ -315,24 +329,8 @@ hr{
   margin: 20px 40px 5px;
 }
 
-.books ul{
-  list-style: none;
-  margin-top: 2px;
-  padding-left: 30px;
-}
-
-.books ul li{
-  display: inline-block;
-  height: 220px;
-  width: 180px;
-  padding: 6px;
-  text-transform: uppercase;
-  margin: 20px 10px auto;
-  text-align: center;
-}
-
-.books ul li:first-of-type{
-  margin: 20px 5px auto;
+.description{
+  margin-bottom: 55px;
 }
 
 .button{
@@ -354,15 +352,14 @@ hr{
   font-weight: 600;
 }
 /***BOOK SLIDE STYLE***/
-#bookslideshow { 
-    margin: 20px 40px 5px; 
+.bookslideshow { 
+    margin: 20px 0px 0px 50px; 
     position: relative; 
-    width: 92.2%; 
-    height: 280px; 
-    border-bottom: 2px solid; 
+    width: 90%; 
+    height: 240px; 
 }
 
-#bookslideshow > div { 
+.bookslideshow > div { 
     position: absolute; 
     top: 10px; 
     left: 10px; 
@@ -370,6 +367,9 @@ hr{
     bottom: 10px; 
 }
 
+.bookslideshow img{
+  padding: 10px 30px 10px 0px;
+}
 /******GG BOOKS******/
 
 .ggbooks{
