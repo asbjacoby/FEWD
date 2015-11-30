@@ -65,6 +65,12 @@ a:hover, a:active { text-decoration: none; color:#BDC6CA }
     background: #fff;
 }
 
+.credit{
+  font-size: 14px;
+  color: #bdc6ca;
+  text-align: center;
+}
+
 body{
   line-height: 1.4;
   font-family: Garamond, serif;
@@ -141,6 +147,10 @@ header nav ul li {
   position: relative;
 }
 
+.adjust-normalize{
+  padding-left: 20px;
+}
+
 li:hover{
   text-decoration: underline;
 }
@@ -204,6 +214,7 @@ img{
     bottom: 10px; 
 }
 
+/***HOME PAGE CONTIN.***/
 .exhibits{
   width: 47%;
   height: 250px;
@@ -294,6 +305,7 @@ article p{
   position: relative;
   z-index: 20;
 }
+
 /******INDIVIDUAL ARTIST PAGES******/
 
 /******EXHIBITIONS PAGE******/
@@ -396,13 +408,31 @@ hr{
 
 /******BLOG******/
 
+.blog{
+  height: 2100px;
+  width: 970px;
+}
+
+aside{
+  width: 280px;
+  margin-top: 55px;
+  float: right;
+  border-left: 1px solid #161616;
+}
+
 #bloglogo{
   margin: 18px 165px auto;
 }
 
 .blogpost{
-  margin: 30px 0 30px 30px;
-  width: 700px;
+  float: left;
+  width: 600px;
+  margin: 10px 10px 0px 50px;
+  border-bottom: 1px solid #161616;
+}
+
+.blogul{
+  list-style: none;
 }
 
 .blogpost h2{
@@ -416,6 +446,16 @@ hr{
   color: #161616;
   font-size: 15px;
   font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+.emailbutton{
+  border-radius: 1px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
 }
 
 /******CONTACT******/
