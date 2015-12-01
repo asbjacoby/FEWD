@@ -165,12 +165,6 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
-/***DROPDOWN li***/
-.dropdown{
-  display: none;
-}
-
-
 footer h3{
   text-align: center;
 }
@@ -310,15 +304,18 @@ article p{
 
 /******EXHIBITIONS PAGE******/
 
-.exhibit-artwork{
-    float: left;
-    width: 300px;
+.exhibit-image{
+  width: 23.4%;
+  border-right: 2px solid #bdc6ca;
+  margin: 40px 20px 40px 50px;
+  float: left;
 }
 
 .exhibit-blurb{
-    margin-left: 330px;
-    padding-left: 25px;
-    border-left: 1px solid #e3e8ea;
+  width: 61%;
+  float: right;
+  margin: 30px 50px 50px 20px;
+  text-align: justify;
 }
 
 hr{
@@ -382,6 +379,7 @@ hr{
 .bookslideshow img{
   padding: 10px 30px 10px 0px;
 }
+
 /******GG BOOKS******/
 
 .ggbooks{
@@ -452,10 +450,10 @@ aside{
   border-radius: 1px;
   padding: 10px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
   display: block;
-  margin: 10px auto;
+  margin-top: 10px;
 }
 
 /******CONTACT******/
@@ -481,7 +479,7 @@ aside{
   margin: 0px auto;
 }
 
-/***contact CONTAINER STYLE***/
+/***CONTACT CONTAINER STYLE***/
 .contactform{
   width: 803px;
   height: 325px;
@@ -492,7 +490,12 @@ aside{
 
 .contact-info h3{
   text-align: left;
-  padding-top: 14px;
+  padding-top: 12px;
+  margin-bottom: 8px;
+}
+
+.contact-info p, ul{
+  margin: 0px;
 }
 
 .contact-info{
@@ -514,13 +517,15 @@ aside{
   list-style: none;
   float: left;
   display: inline-block;
-  padding: 7px 0px;
 }
 
 .email img{
-  margin-left: 12px;
+  margin-left: 25px;
 }
 
+.adjust{
+  margin: 8px auto;
+}
 
 
 /******RESPONSIVE 650px******/
