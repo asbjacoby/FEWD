@@ -59,7 +59,7 @@ a:hover, a:active { text-decoration: none; color:#BDC6CA }
 .main{
     width: 970px;
     height: 1400px;
-    margin: 0px auto;
+    margin: 7px auto;
     padding: 0px;
     border: 10px solid #bdc6ca;
     background: #fff;
@@ -262,7 +262,7 @@ article p{
 /*******ARTIST HOME PAGE*******/
 
 .artists{
-  height: 2050px;
+  height: 2055px;
   width: 970px;
 }
 
@@ -304,18 +304,40 @@ article p{
 
 /******EXHIBITIONS PAGE******/
 
+.exhibit-landing{
+  margin-top: 50px;
+}
+
+.exhibit-landing h2{
+  text-align: left;
+  margin: 15px 30px 2px 0;
+  border-bottom: 1px solid;
+}
+
+.exhibit-landing h3, a{
+  text-align: left;
+  padding: 0;
+  text-decoration: none;
+  color: #444;
+}
+
 .exhibit-image{
-  width: 23.4%;
-  border-right: 2px solid #bdc6ca;
-  margin: 40px 20px 40px 50px;
+  width: 26%;
+  height: 350px;
+  margin: 2px 0px 19px 50px;
   float: left;
 }
 
 .exhibit-blurb{
-  width: 61%;
-  float: right;
-  margin: 30px 50px 50px 20px;
+  width: 65%;
+  float: left;
+  margin: 0px 2px 40px 2px;
+  padding: 5px;
   text-align: justify;
+}
+
+.exhibit-blurb p{
+  margin-right: 35px;
 }
 
 hr{
@@ -413,19 +435,20 @@ hr{
 
 aside{
   width: 280px;
+  height: 1800px;
   margin-top: 55px;
   float: right;
   border-left: 1px solid #161616;
 }
 
 #bloglogo{
-  margin: 18px 165px auto;
+  margin: 18px 165px 13px 165px;
 }
 
 .blogpost{
   float: left;
   width: 600px;
-  margin: 10px 10px 0px 50px;
+  margin: 10px 20px 0px 40px;
   border-bottom: 1px solid #161616;
 }
 
