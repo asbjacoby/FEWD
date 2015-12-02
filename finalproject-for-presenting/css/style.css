@@ -1,0 +1,560 @@
+/*
+Project Name: Govinda Gallery 2015
+Client: Chris Murray
+Author: Anna Jacoby
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******link color override*****/
+a:visited { text-decoration: none; color:#BDC6CA; }
+a:hover { text-decoration: none; color:#BDC6CA; }
+a:focus { text-decoration: none; color:#BDC6CA; }
+a:hover, a:active { text-decoration: none; color:#BDC6CA }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Center the container 
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+*/
+.main{
+    width: 970px;
+    height: 1400px;
+    margin: 10px auto;
+    padding: 0px;
+    border: 10px solid #bdc6ca;
+    background: #fff;
+}
+
+.credit{
+  font-size: 14px;
+  color: #bdc6ca;
+  text-align: center;
+}
+
+body{
+  line-height: 1.4;
+  font-family: Garamond, serif;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  color: #444;
+  background: #161616;
+}
+
+h1{
+  margin-top: 30px;
+}
+
+h1 a:link{
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  color: #BDC6CA;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:10px;
+  margin: 0px auto;
+  word-spacing: 3em;
+
+}
+
+h2{
+  font-family: Century gothic, serif;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid #161616;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+h3{
+  font-family: Century gothic, serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+header{
+  width: 100%
+}
+
+.glogo{
+    position: absolute;
+    left: 47.6%;
+}
+
+header nav {
+  text-align: center;
+  margin: 85px 0px auto;
+  display: inline-block;
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 12px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-family: Century gothic, serif;
+  text-align: center;
+  position: relative;
+}
+
+.adjust-normalize{
+  padding-left: 20px;
+}
+
+li:hover{
+  text-decoration: underline;
+}
+
+li:first-of-type{
+  padding-left: 0px;
+}
+
+header nav ul li a {
+  color: #bdc6ca;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer h3{
+  text-align: center;
+}
+
+footer img{
+  position: absolute;
+  left: 48%;
+}
+
+/*****HOME PAGE*****/
+
+.main{
+    width: 970px;
+    height: 778px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 10px solid #bdc6ca;
+    background: #fff;
+}
+
+/***SLIDESHOW STYLE***/
+#slideshow { 
+    margin: 15px auto; 
+    position: relative; 
+    width: 96.6%; 
+    height: 420px;  
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/***HOME PAGE CONTIN.***/
+.exhibits{
+  width: 47%;
+  height: 250px;
+  float: left;
+  border: 6px solid #bdc6ca;
+  margin: 23px 0px 10px 25px;
+  padding: 0px 25px;
+}
+
+.exhibits h3{
+  text-align: justify;
+  padding: 15px 40px 0px 40px;
+}
+
+.exhibits a{
+  text-decoration: none;
+  color: #444;
+}
+
+.exhibits a:hover{
+  text-decoration: underline;
+}
+
+.connect{
+  width: 47%;
+  height: 250px;
+  float: right;
+  border: 6px solid #bdc6ca;
+  margin: 23px 23px 10px 0px;
+  padding: 0px 25px;
+}
+
+.connect img{
+  float: left;
+}
+
+.connect ul li{
+  float: left;
+  list-style: none;
+  margin: 8px auto;
+  padding-left: 65px;
+  display: inline-block;
+}
+
+article p{
+  font-size: 14px;
+  color: #bdc6ca;
+  text-align: center;
+}
+
+/*******ARTIST HOME PAGE*******/
+
+.artists{
+  height: 2055px;
+  width: 970px;
+}
+
+.artists ul{
+  list-style: none;
+  margin-top: 2px;
+  padding-left: 30px;
+}
+
+.artists ul li{
+  display: inline-block;
+  height: 160px;
+  width: 200px;
+  text-transform: uppercase;
+  margin: 40px 10px auto;
+  text-align: center;
+  border: 1px solid; 
+  border-width: thin; 
+  border-color: #717679;
+}
+
+.artists h2{
+  margin: 30px 40px 5px;
+}
+
+.artists h3{
+  text-transform: none;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.thumb{
+  position: relative;
+  z-index: 20;
+}
+
+/******INDIVIDUAL ARTIST PAGES******/
+
+/******EXHIBITIONS PAGE******/
+
+.exhibit-landing{
+  margin-top: 70px;
+}
+
+.exhibit-landing h2{
+  text-align: left;
+  margin: 0px 30px 2px 0;
+  border-bottom: 1px solid;
+}
+
+.exhibit-landing h3, a{
+  text-align: left;
+  padding: 0;
+  text-decoration: none;
+  color: #444;
+}
+
+.exhibit-image{
+  width: 26%;
+  height: 350px;
+  margin: 2px 0px 0px 50px;
+  float: left;
+}
+
+.exhibit-blurb{
+  width: 65%;
+  float: left;
+  margin: 0px 2px 122px 2px;
+  text-align: justify;
+}
+
+.exhibit-blurb p{
+  margin-right: 35px;
+}
+
+hr{
+  width: 95%;
+  background-color: #bdc6ca;
+  height: 2px;
+  border: none;
+  margin: 15px auto;
+
+}
+
+/******PUBLICATIONS PAGE******/
+
+.books{
+  height: 1100px;
+  width: 970px;
+}
+
+.books h2{
+  margin: 30px 40px 5px;
+}
+
+.description{
+  margin-bottom: 55px;
+}
+
+.button{
+  background: #bdc6ca;
+  border-radius: 1px;
+  padding: 12px;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin: 30px 290px;
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
+}
+
+.button a:hover{
+  font-weight: 600;
+}
+/***BOOK SLIDE STYLE***/
+.bookslideshow { 
+    margin: 20px 0px 0px 50px; 
+    position: relative; 
+    width: 90%; 
+    height: 240px; 
+}
+
+.bookslideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.bookslideshow img{
+  padding: 10px 30px 10px 0px;
+}
+
+/******GG BOOKS******/
+
+.ggbooks{
+  height: 4450px;
+}
+
+.ggbooks h2{
+  margin: 30px 40px 23px;
+}
+
+.bookthumb{
+  width: 23.4%;
+  border-right: 2px solid #bdc6ca;
+  margin: 40px 20px 40px 50px;
+  float: left;
+}
+
+.book-info{
+  width: 61%;
+  float: right;
+  margin: 30px 50px 50px 20px;
+  text-align: justify;
+}
+
+/******BLOG******/
+
+.blog{
+  height: 2100px;
+  width: 970px;
+}
+
+aside{
+  width: 280px;
+  height: 1800px;
+  margin-top: 55px;
+  float: right;
+  border-left: 1px solid #161616;
+}
+
+#bloglogo{
+  margin: 18px 165px 13px 165px;
+}
+
+.blogpost{
+  float: left;
+  width: 600px;
+  margin: 10px 20px 0px 40px;
+  border-bottom: 1px solid #161616;
+}
+
+.blogul{
+  list-style: none;
+}
+
+.blogpost h2{
+  text-align: left;
+  border: none;
+  font-size: 1.8em;
+}
+
+.blogpost p{
+  text-align: left;
+  color: #161616;
+  font-size: 15px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+.emailbutton{
+  border-radius: 1px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+/******CONTACT******/
+
+.about{
+  margin: 20px 40px 5px;
+}
+
+.aboutH{
+  height: 1400px;
+}
+
+.abouttext{
+  margin: 30px 75px 0px;
+  color: #161616;
+  text-align: justify;
+  font-size: 15px;
+  font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+.caption{
+  font-size: 10px;
+  margin: 0px auto;
+}
+
+/***CONTACT CONTAINER STYLE***/
+.contactform{
+  width: 803px;
+  height: 325px;
+  border: 6px solid #bdc6ca;
+  margin: 28px 75px;
+  padding: 0px 25px;
+}
+
+.contact-info h3{
+  text-align: left;
+  padding-top: 12px;
+  margin-bottom: 8px;
+}
+
+.contact-info p, ul{
+  margin: 0px;
+}
+
+.contact-info{
+  float: left;
+  width: 25%;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: #444;
+}
+
+.email{
+  float: right;
+  width: 50%;
+}
+
+.email ul li{
+  list-style: none;
+  float: left;
+  display: inline-block;
+}
+
+.email img{
+  margin-left: 25px;
+}
+
+.adjust{
+  margin: 8px auto;
+}
+
+
+/******RESPONSIVE 650px******/
+@media screen and (max-width:650px){
+
+ .hamburger-icon:before { 
+    content:'\2630';
+    color: #bdc6ca; 
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+}
