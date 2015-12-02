@@ -59,7 +59,7 @@ a:hover, a:active { text-decoration: none; color:#BDC6CA }
 .main{
     width: 970px;
     height: 1400px;
-    margin: 7px auto;
+    margin: 10px auto;
     padding: 0px;
     border: 10px solid #bdc6ca;
     background: #fff;
@@ -174,13 +174,6 @@ footer img{
   left: 48%;
 }
 
-/****
-img{
-  position: absolute;
-  display: inline-block;
-  }
-****/
-
 /*****HOME PAGE*****/
 
 .main{
@@ -285,7 +278,7 @@ article p{
 }
 
 .artists h2{
-  margin: 20px 40px 5px;
+  margin: 30px 40px 5px;
 }
 
 .artists h3{
@@ -305,12 +298,12 @@ article p{
 /******EXHIBITIONS PAGE******/
 
 .exhibit-landing{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .exhibit-landing h2{
   text-align: left;
-  margin: 15px 30px 2px 0;
+  margin: 0px 30px 2px 0;
   border-bottom: 1px solid;
 }
 
@@ -324,15 +317,14 @@ article p{
 .exhibit-image{
   width: 26%;
   height: 350px;
-  margin: 2px 0px 19px 50px;
+  margin: 2px 0px 0px 50px;
   float: left;
 }
 
 .exhibit-blurb{
   width: 65%;
   float: left;
-  margin: 0px 2px 40px 2px;
-  padding: 5px;
+  margin: 0px 2px 122px 2px;
   text-align: justify;
 }
 
@@ -357,7 +349,7 @@ hr{
 }
 
 .books h2{
-  margin: 20px 40px 5px;
+  margin: 30px 40px 5px;
 }
 
 .description{
@@ -409,7 +401,7 @@ hr{
 }
 
 .ggbooks h2{
-  margin: 20px 40px 23px;
+  margin: 30px 40px 23px;
 }
 
 .bookthumb{
