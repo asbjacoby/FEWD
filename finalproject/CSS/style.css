@@ -444,6 +444,10 @@ aside{
   border-bottom: 1px solid #161616;
 }
 
+.social-icon{
+  margin-top: 60px; 
+}
+
 .blogul{
   list-style: none;
 }
